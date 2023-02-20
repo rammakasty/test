@@ -9,17 +9,24 @@ const StBox = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding: 0 1rem;
+    border-radius: 10px;
 `;
 
 function App() {
     return (
         <>
+            <div></div>
             <h1>모두의 투두리스트</h1>
             <hr />
             <div>무엇을 할까요</div>
-            <StBox borderColor="red">박스</StBox>
-            <StBox borderColor="blue">박스</StBox>
-            <StBox borderColor="green">박스</StBox>
+            <StBox borderColor="red">
+                <div>할일 기록하기</div>
+                <div>123</div>
+            </StBox>
+            <StBox borderColor="blue">
+                <div>TODO LIST</div>
+                <div>123</div>
+            </StBox>
         </>
     );
 }
